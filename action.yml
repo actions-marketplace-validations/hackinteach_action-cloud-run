@@ -23,6 +23,12 @@ inputs:
   cloud_sql:
     description: 'CloudSQL instance name'
     required: false
+  env:
+    description: 'Environment variables file'
+    required: false
+  min_instances:
+    description: 'Minimum number of instance'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'

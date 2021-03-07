@@ -17,6 +17,10 @@ else
     ENV_FLAG="--clear-env-vars"
 fi
 
+if ["$INPUT_MIN_INSTANCES"]
+then
+  ENG_FLAG="--min-instances=$INPUT_MIN_INSTANCES $ENV_FLAG"
+fi
 
 if ["$INPUT_CLOUD_SQL"]
 then
